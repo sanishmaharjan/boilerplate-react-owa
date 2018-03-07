@@ -1,0 +1,51 @@
+.block-fieldset{
+    margin-bottom: 50px;
+}
+
+.block-fieldset p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.block-fieldset label{
+    font-size: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.block-fieldset  input[type="text"],
+.bed-tag-form .form-block textarea {
+    width: calc(100% - 400px);
+}
+
+.block-fieldset button {
+    background: -owg-linear-gradient(top,#fff,#ddd);
+    background: -webkit-linear-gradient(top,#fff,#ddd);
+    background: linear-gradient(top,#fff,#ddd);
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    display: inline-block;
+    line-height: 1.2em;
+    color: #363463;
+    cursor: pointer;
+    min-width: 0;
+    max-width: 300px;
+    text-decoration: none;
+    width: auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.block-fieldset button:hover {
+    background: #e2e2e2;
+    border-color: #d0d0d0;
+}
+
+.block-fieldset button:disabled {
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #ccc;
+    cursor: default;
+    cursor: not-allowed;
+}

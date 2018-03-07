@@ -8,7 +8,6 @@ class TopNav extends React.Component {
     constructor(props, context) {
         super(props, context);
 
-        this.intl = context.intl;
         this.urlHelper = new UrlHelper();
     }
 
@@ -27,17 +26,12 @@ class TopNav extends React.Component {
                     </li>
                     <li>
                         <Link to={'/'} replace={this.props.path === '/'} className={this.linkClass('/')}>
-                            {this.intl.formatMessage({id: 'HOME_PAGE'})}
+                            {this.context.intl.formatMessage({id: 'HOME_PAGE'})}
                         </Link>
                     </li>
                     <li>
-                        <Link to={'/form'} replace={this.props.path === '/form'} className={this.linkClass('/form')}>
-                            {this.intl.formatMessage({id: 'FORM_PAGE'})}
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={'/list'} replace={this.props.path === '/list'} className={this.linkClass('/list')}>
-                            {this.intl.formatMessage({id: 'LIST_PAGE'})}
+                        <Link to={'/blink'} replace={this.props.path === '/blink'} className={this.linkClass('/blink')}>
+                            {this.context.intl.formatMessage({id: 'BLINK_PAGE'})}
                         </Link>
                     </li>
                 </ul>

@@ -37,7 +37,7 @@ export default class StateApi {
         } else if (notifyType == 'error') {
             notifier.error(notifier.props.errorText, message, 5000);
         } else {
-            notifier.error(notifier.props.infoText, message, 5000);
+            notifier.info(notifier.props.infoText, message, 5000);
         }
     };
 }

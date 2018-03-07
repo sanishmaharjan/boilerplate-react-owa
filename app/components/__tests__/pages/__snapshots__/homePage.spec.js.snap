@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders correctly 1`] = `
+<div>
+  <TopNav
+    path="/blink"
+  />
+  <div
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "borderRadius": 5,
+        "marginTop": 10,
+        "minHeight": 500,
+        "padding": 20,
+      }
+    }
+  >
+    <UserInfo />
+    <NotificationDemo
+      defaultMsg="This is sample message"
+    />
+  </div>
+</div>
+`;

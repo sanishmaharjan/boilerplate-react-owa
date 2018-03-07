@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationDemo renders correctly 1`] = `
+<fieldset
+  className="block-fieldset"
+>
+  <legend>
+      
+    Notification
+      
+  </legend>
+  <p>
+    <label>
+      Message
+      :
+    </label>
+    <input
+      onChange={[Function]}
+      type="text"
+      value="This is sample message"
+    />
+  </p>
+  <p>
+    <button
+      id="success-btn"
+      onClick={[Function]}
+    >
+      Success
+    </button>
+    <button
+      id="error-btn"
+      onClick={[Function]}
+    >
+      Error
+    </button>
+    <button
+      id="info-btn"
+      onClick={[Function]}
+    >
+      Info
+    </button>
+  </p>
+</fieldset>
+`;
+
+exports[`NotificationDemo renders correctly 2`] = `
+<fieldset
+  className="block-fieldset"
+>
+  <legend>
+      
+    Notification
+      
+  </legend>
+  <p>
+    <label>
+      Message
+      :
+    </label>
+    <input
+      onChange={[Function]}
+      type="text"
+      value="New message"
+    />
+  </p>
+  <p>
+    <button
+      id="success-btn"
+      onClick={[Function]}
+    >
+      Success
+    </button>
+    <button
+      id="error-btn"
+      onClick={[Function]}
+    >
+      Error
+    </button>
+    <button
+      id="info-btn"
+      onClick={[Function]}
+    >
+      Info
+    </button>
+  </p>
+</fieldset>
+`;

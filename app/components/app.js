@@ -5,8 +5,7 @@ import {IntlProvider} from 'react-intl';
 import ReactNotify from 'react-notify';
 
 import HomePage from 'components/pages/homePage';
-import FormPage from 'components/pages/formPage';
-import ListPage from 'components/pages/listPage';
+import BlinkPage from 'components/pages/blinkPage';
 import Header from 'components/header';
 import LocaleList from 'components/locale/localeList';
 import StateApi from 'utilities/stateApi';
@@ -42,8 +41,7 @@ class App extends React.Component {
                     <Header />
                     <Switch>
                         <Route exact path={'/'} component={HomePage} />
-                        <Route exact path={'/form'} component={FormPage} />
-                        <Route exact path={'/list'} component={ListPage} />
+                        <Route exact path={'/blink'} component={BlinkPage} />
                     </Switch>
                     <LocaleList allowedLocales={this.state.allowedLocales} localeCode={this.state.localeCode} />
                     <ReactNotify
@@ -62,10 +60,6 @@ App.propTypes = {
     localeCode: PropTypes.string.isRequired,
     defaultLocale: PropTypes.string.isRequired,
     allowedLocales: PropTypes.array.isRequired
-};
-
-FormPage.contextTypes = {
-    intl: PropTypes.object
 };
 
 export default App;

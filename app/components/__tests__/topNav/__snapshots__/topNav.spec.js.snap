@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopNav renders correctly 1`] = `
+<TopNav
+  path="/blink"
+>
+  <nav>
+    <ul
+      className="title-section"
+    >
+      <li>
+        <a
+          href="https://192.168.33.10/openmrs"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-home"
+          />
+        </a>
+      </li>
+      <li>
+        <Link
+          className=""
+          replace={false}
+          to="/"
+        >
+          <a
+            className=""
+            onClick={[Function]}
+          >
+            Home page
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="active"
+          replace={true}
+          to="/blink"
+        >
+          <a
+            className="active"
+            onClick={[Function]}
+          >
+            Blink page
+          </a>
+        </Link>
+      </li>
+    </ul>
+  </nav>
+</TopNav>
+`;

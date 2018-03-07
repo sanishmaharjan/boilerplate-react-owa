@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserInfo renders correctly 1`] = `
+<fieldset
+  className="block-fieldset"
+>
+  <legend>
+      
+    User Information
+      
+  </legend>
+  <p>
+    <label>
+      User Uuid
+      :
+    </label>
+    <span
+      id="user-uuid"
+    >
+       
+      c1c21e11-3f10-11e4-adec-0800271c1b75
+       
+    </span>
+  </p>
+  <p>
+    <label>
+      Name
+      :
+    </label>
+    <span>
+       
+      Admin User
+       
+    </span>
+  </p>
+  <p>
+    <label>
+      User Name
+      :
+    </label>
+    <span
+      id="user-name"
+    >
+       
+      admin
+       
+    </span>
+  </p>
+</fieldset>
+`;

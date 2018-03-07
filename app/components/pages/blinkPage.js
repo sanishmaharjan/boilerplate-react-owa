@@ -2,20 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import TopNav from 'components/topNav';
-import ReactNotify from 'react-notify';
-
-export default class ListPage extends React.Component {
+export default class BlinkPage extends React.Component {
     constructor(props, context) {
         super(props, context);
-
         this.state = {};
-        this.intl = context.intl;
     }
 
     style = {
         wrapper: {
             marginTop: 10,
-            paddingTop: 20,
+            padding: 20,
             borderRadius: 5,
             backgroundColor: '#fff',
             minHeight: 500
@@ -26,13 +22,20 @@ export default class ListPage extends React.Component {
         return (
             <div>
                 <TopNav path={this.props.match.path} />
-                <div style={this.style.wrapper}>List Page</div>
+                <div style={this.style.wrapper}>
+                    <fieldset className="block-fieldset">
+                        <legend>Blink Page &nbsp;</legend>
+                        <p>
+                            <span> Boilerplate for development of OpenMRS OWA. </span>
+                        </p>
+                    </fieldset>
+                </div>
             </div>
         );
     }
 }
 
-ListPage.contextTypes = {
+BlinkPage.contextTypes = {
     store: PropTypes.object,
     intl: PropTypes.object
 };

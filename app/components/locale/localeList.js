@@ -12,7 +12,6 @@ export default class LocaleList extends React.Component {
     constructor(props, context) {
         super(props, context);
 
-        this.intl = context.intl;
         this.urlHelper = new UrlHelper();
         this.localeHelper = new LocaleHelper();
         this.cookies = new Cookies();
@@ -34,10 +33,10 @@ export default class LocaleList extends React.Component {
         return (
             <div>
                 <small className="language-list">
-                    <span>{this.intl.formatMessage({id: 'CHOOSE_LANGUAGE'})}: &nbsp;</span>
+                    <span>{this.context.intl.formatMessage({id: 'CHOOSE_LANGUAGE'})}: &nbsp;</span>
                     {this.props.allowedLocales.map((locale, index) => (
                         <span key={locale}>
-                            {index !== 0 && index !== this.props.allowedLocales.length - 1 ? ' | ' : ''}
+                            {index !== 0 ? ' | ' : ''}
                             <a
                                 href="javascript:void(0)"
                                 onClick={() => this.setLanguage(locale)}

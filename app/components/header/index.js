@@ -6,7 +6,6 @@ require('./header.css');
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
-        this.intl = context.intl;
         this.urlHelper = new UrlHelper();
     }
 
@@ -17,7 +16,7 @@ class Header extends React.Component {
                     <img src="img/openmrs.png" alt="logo" />
                 </span>
                 <a href={this.urlHelper.originPath() + '/openmrs/logout'} className="logout">
-                    <span>{this.intl.formatMessage({id: 'LOGOUT'})}</span>
+                    <span>{this.context.intl.formatMessage({id: 'LOGOUT'})}</span>
                     <i className="fa fa-sign-out" aria-hidden="true" />
                 </a>
             </div>

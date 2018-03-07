@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="openmrs-header"
+>
+  <span
+    className="logo"
+  >
+    <img
+      alt="logo"
+      src="img/openmrs.png"
+    />
+  </span>
+  <a
+    className="logout"
+    href="https://192.168.33.10/openmrs/logout"
+  >
+    <span>
+      Logout
+    </span>
+    <i
+      aria-hidden="true"
+      className="fa fa-sign-out"
+    />
+  </a>
+</div>
+`;
