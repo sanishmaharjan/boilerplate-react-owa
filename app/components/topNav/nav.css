@@ -1,0 +1,44 @@
+ul.title-section {
+    list-style: none;
+    padding: 0;
+    clear: both;
+    font-size: .9em;
+    border-bottom: 1px solid #fff;
+    margin-top: 20px;
+}
+
+ul.title-section li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.title-section li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15%;
+    color: #ccc;
+    height: 70%;
+    border-right: 1px solid #ccc;
+}
+
+ul.title-section li a
+{
+    display: block;
+    padding: 5px 10px 5px 5px;
+    color: #454e59;
+    font-size: 14px;
+    font-family: OpenSans, Arial, sans-serif;
+}
+
+ul.title-section li a i {
+    font-size: 18px;
+}
+
+ul.title-section li a.active {
+    font-weight: 600;
+}
+
+ul.title-section li a:hover {
+    text-decoration: underline;
+}

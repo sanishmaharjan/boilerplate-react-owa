@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "Boilerplate",
+  "description": "Boilerplate for developing react OpenMRS OWA",
+  "launch_path": "index.html",
+  "icons": {
+    "48": "/img/omrs-button.png"
+  },
+  "developer": {
+    "name": "SanishMaharjan",
+    "url": "https://github.com/sanishmaharjan/boilerplate-react-owa"
+  },
+  "default_locale": "en",
+    "activities": {
+      "openmrs": {
+        "href": "*"
+      }
+    }
+}

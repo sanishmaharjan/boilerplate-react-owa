@@ -1,0 +1,7 @@
+.language-list a {
+    color: #363463;
+}
+
+.language-list a.active {
+    font-weight: bold;
+}
